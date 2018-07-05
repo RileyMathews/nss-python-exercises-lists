@@ -10,3 +10,11 @@ print(planet_list)
 
 rocky_planets = planet_list[0:4]
 print(rocky_planets)
+
+spacecraft_list = [('Voyager', 'Saturn'), ('Cassini', 'Saturn'), ('Rover', 'Mars'), ('Falcon', 'Earth'), ('Enterprise', 'Mercury')]
+print(spacecraft_list)
+
+for planet in planet_list:
+    for spacecraft in spacecraft_list:
+        if spacecraft[1] == planet:
+            print( f"{planet} has been visited by {spacecraft[0]}")
